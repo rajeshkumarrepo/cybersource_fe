@@ -1,0 +1,28 @@
+.eargo-component-button {
+  box-sizing: border-box;
+  text-align: center;
+  align-self: center;
+  background: #ff5e2b;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #ffffff;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    &:enabled {
+      color: #ff5e2b;
+      border: 1px solid #ff5e2b;
+      background: #ffffff;
+    }
+  }
+  &:focus-visible {
+    box-shadow: 0 0 4px 1px #333333;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

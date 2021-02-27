@@ -1,0 +1,97 @@
+label.primary-input-label {
+  display: flex;
+  position: relative;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  outline: 0px;
+  height: 75px;
+  padding-left: 24px;
+  background: #ffffff;
+  &.error {
+    display: flex;
+    align-items: center;
+    height: 67px;
+    border: 1px solid #f16b6b;
+    background: #f16b6b;
+    color: #ffffff;
+  }
+  &.error_border {
+    display: flex;
+    z-index: 1;
+    border: 1px solid #f16b6b !important;
+    border-right: 1px solid #f16b6b;
+    span {
+      color: #f16b6b !important;
+    }
+  }
+  &.primary-input-one-line-style {
+    border: unset;
+    border-radius: unset;
+    margin-bottom: unset;
+  }
+  @media (max-width: 37.5em) {
+    height: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  span.floating_label {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    color: #989898;
+    transform-origin: 0px 0px 0px;
+    transform: translateY(-1.5rem) scale(0.9);
+    padding: 2.25rem 0px 0px 0px;
+    transition: transform 0.3s ease-out 0s;
+  }
+  span.label {
+    position: absolute;
+    z-index: 1;
+    color: #989898;
+    transform-origin: 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-out 0s;
+  }
+  .primary-input-show-password {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #989898;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+  }
+
+  input.primary-input-field {
+    color: #333333;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    box-shadow: #ffffff 0px 0px 0px 1.25rem inset;
+    padding-left: 0px;
+    padding-top: 1rem;
+    padding-right: 10px;
+    outline: 0px;
+    border: none;
+  }
+  .primary-input-field:-webkit-autofill,
+  .primary-input-field:-webkit-autofill:hover,
+  .primary-input-field:-webkit-autofill:focus,
+  .primary-input-field:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+  }
+
+  input.disable-autocomplete::-webkit-credentials-auto-fill-button,
+  input.disable-autocomplete::-webkit-contacts-auto-fill-button {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+  }
+}
