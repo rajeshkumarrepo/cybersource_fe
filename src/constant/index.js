@@ -1,1 +1,1 @@
-export const SERVER_URL = 'https://shop-dev4.eargo.com'//'https://cybersource-test.herokuapp.com'
+export const SERVER_URL = 'https://shop-dev4.eargo.com/v2'//'https://cybersource-test.herokuapp.com'
